@@ -258,6 +258,7 @@ export const getCommonCellStyles = ({
   tableCellProps: TableCellProps;
   theme: Theme;
 }) => {
+  console.log(column.getStart('left'))
   const widthStyles = {
     minWidth: `max(calc(var(--${header ? 'header' : 'col'}-${parseCSSVarId(
       header?.id ?? column.id,
